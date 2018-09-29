@@ -38,8 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
-                    android:hint="Diga seu NICKNAME
-                     e a cidade de onde voce esta valando kkk "
+                    android:hint="Diga seu NICKNAME e a cidade de onde... "
                     android:maxLines="1"
                     android:singleLine="true" />
                 ​
