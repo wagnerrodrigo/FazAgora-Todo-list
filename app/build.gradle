@@ -19,7 +19,7 @@ android {
     }
 }
 
-realm{
+realm {
     syncEnabled = true
 }
 

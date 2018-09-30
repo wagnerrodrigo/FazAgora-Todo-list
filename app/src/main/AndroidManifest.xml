@@ -2,14 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wagner.fazagora_todo_list">
 
-    <uses-permission android:name="android.premission.INTERNET"/>
+    <uses-permission android:name="android.premission.INTERNET" />
 
     <application
+        android:name=".FazToDoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:name=".FazToDoApplication"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".bemVindoActivity">
@@ -19,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ItemsActivity"
+            android:label="@string/title_activity_items"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

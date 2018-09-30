@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FazAgora-Todo-list</string>
+    <string name="title_activity_items">ItemsActivity</string>
 </resources>
