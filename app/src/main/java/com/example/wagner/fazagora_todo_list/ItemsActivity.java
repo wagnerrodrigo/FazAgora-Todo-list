@@ -111,7 +111,7 @@ public class ItemsActivity extends AppCompatActivity {
             SyncUser syncUser = SyncUser.currentUser();
             if (syncUser != null) {
                 syncUser.logout();
-                Intent intent = new Intent(this, WelcomeActivity.class);
+                Intent intent = new Intent(this, bemVindoActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }

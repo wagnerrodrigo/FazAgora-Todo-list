@@ -18,7 +18,7 @@ import io.realm.SyncUser;
 
 import static com.example.wagner.fazagora_todo_list.Constantes.AUTH_URL;
 
-public class WelcomeActivity extends AppCompatActivity {
+public class bemVindoActivity extends AppCompatActivity {
 
     private EditText mNicknameTextView;
     private View mProgressView;
@@ -88,7 +88,7 @@ public class WelcomeActivity extends AppCompatActivity {
         });
     }
         private void goToItemsActivity(){
-        Intent intent = new Intent(WelcomeActivity.this, ItemsActivity.class);
+        Intent intent = new Intent(bemVindoActivity.this, ItemsActivity.class);
         startActivity(intent);
     }
 }
