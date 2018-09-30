@@ -18,7 +18,7 @@ import io.realm.SyncUser;
 
 import static com.example.wagner.fazagora_todo_list.Constantes.AUTH_URL;
 
-public class bemVindoActivity extends AppCompatActivity {
+public class WelcomeActivity extends AppCompatActivity {
 
     private EditText mNicknameTextView;
     private View mProgressView;
@@ -31,14 +31,14 @@ public class bemVindoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bem_vindo);
 
         if(SyncUser.currentUser() !=null){
-            //this.goToItemsActivity();
+            this.goToItemsActivity();
 
         }
 
         // Setar o formulario de log.
         mNicknameTextView = findViewById(R.id.nickname);
         Button loginButton = findViewById(R.id.login_button);
-       // loginButton.setOnClickListener(view -> attemptLogin());
+        loginButton.setOnClickListener(view -> attemptLogin());
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
     }
@@ -87,8 +87,8 @@ public class bemVindoActivity extends AppCompatActivity {
             }
         });
     }
-    //    private void goToItemsActivity(){
-//        Intent intent = new Intent(bemVindoActivity.this, ItemsActivity.class);
-//        startActivity(intent);
-//    }
+        private void goToItemsActivity(){
+        Intent intent = new Intent(WelcomeActivity.this, ItemsActivity.class);
+        startActivity(intent);
+    }
 }
